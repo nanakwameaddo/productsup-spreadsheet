@@ -39,8 +39,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
 
-# Copy composer files
-COPY appservice/composer.lock appservice/composer.json /var/www/
 
 # Copy application directory contents and set correct permissions
 COPY --chown=www:www /appservice /var/www

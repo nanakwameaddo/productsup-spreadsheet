@@ -16,7 +16,6 @@ config/secrets/prod/prod.decrypt.private.php
 # Cache, logs, etc.
 appservice/*.log
 appservice/*.cache
-appservice/*.lock
 
 #####Ignore IDE files
 .idea/
