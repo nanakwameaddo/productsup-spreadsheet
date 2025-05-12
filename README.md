@@ -88,7 +88,7 @@ by allowing derived classes to be used interchangeably with their base classes w
 Clone code repository to your local environment
 
 ```shell
-git clone https://github.com/NANAADDO/productsup-spreadsheet.git
+git clone https://github.com/nanakwameaddo/productsup-spreadsheet.git
 
 ```
 
