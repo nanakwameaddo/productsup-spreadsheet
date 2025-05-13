@@ -3,10 +3,10 @@
 Contents
 ========
 
-* [Application & Code Architecture](#design-tools)
-* [Docker Environment Setup](#installation)
-* [Running the Application & Configuration Guide](#installation)
-* [Testing Strategy & Coverage](#coding-task-details)
+* [Application & Code Architecture](#design-depth)
+* [Docker Environment Setup](#application-setup)
+* [Running the Application & Configuration Guide](#application-configuration-guide)
+* [Testing Strategy & Coverage](#testing-strategy--coverage)
 
 ### NB
 The Secret folder will be shared via email for security purposes and should be placed in the
@@ -26,7 +26,7 @@ Google authentication JSON used for API access
 * Php-CS-Fixer
 
 ##### Code Architecture
-* Patten: Clean Code & Solid
+* Pattern: Clean Code & Solid
 * framework: Hexagonal
 
 ##### DevOps
@@ -133,7 +133,7 @@ echo "** Installing Dependencies ***"
 
 ```
 
-## Application Configuration Guide
+### Application Configuration Guide
 
 #### GOOGLE SPREADSHEET CONFIG :
 #### METHOD 1
@@ -161,7 +161,7 @@ GOOGLE_SHEETS_ID=1CAav5TIRu9oH9vVNxZPkFYiLO81FAVbwAeQW4VMeg2M
 #### STEP 4
 This configuration in the table below can be changed or left as default
 ###### NB
-The FILE_SOURCE cam be passed also as an argument in the console which overwrite the env variable
+The FILE_SOURCE can be passed also as an argument in the console which overwrite the env variable
 
 | NAME                               | PURPOSE                                                | VALUE                                 |
 |------------------------------------|--------------------------------------------------------|---------------------------------------|
@@ -214,7 +214,7 @@ Alternatively, you can leave the variable blank to automatically generate a new 
 
  ```
 
-### Testing Strategy & Coverage:
+## Testing Strategy & Coverage:
 ```shell
 
 **Run the shell script with the following command

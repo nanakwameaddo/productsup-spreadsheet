@@ -5,7 +5,6 @@ services:
       context: .
       dockerfile: Dockerfile
     depends_on:
-      - db
       - redis
     container_name: appservice
     restart: unless-stopped
@@ -43,26 +42,6 @@ services:
     container_name: app-redis
     ports:
       - "6379:6379"
-    networks:
-      - app-network
-
-  #MySQL Service
-  db:
-    image: mysql:5.7.44
-    container_name: db
-    restart: unless-stopped
-    tty: true
-    ports:
-      - "3306:3306"
-    environment:
-      MYSQL_DATABASE: spreadsheet
-      MYSQL_USER: appuser
-      MYSQL_PASSWORD: app@2024
-      MYSQL_ROOT_PASSWORD: app_database
-      SERVICE_TAGS: dev
-      SERVICE_NAME: mysql
-    volumes:
-      - dbdata:/var/lib/mysql
     networks:
       - app-network
 
