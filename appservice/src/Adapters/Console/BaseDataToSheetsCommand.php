@@ -16,7 +16,6 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
-
 #[AsCommand(
     name: 'sync:file-to-sheets',
     description: 'Processes a local or remote file  and syncs its data to a Google Sheet'
@@ -24,7 +23,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 class BaseDataToSheetsCommand extends Command
 {
     protected static $defaultName = 'sync:file-to-sheets';
-    protected string  $fileType = "n/a";
+    protected string  $fileType = 'n/a';
     public function __construct(
         private readonly FileFetcherFactory                              $fileFetcherFactory,
         private readonly FileSourceConfigContract                        $fileSourceConfig,

@@ -4,7 +4,6 @@ namespace App\Application\File\Factory;
 
 use App\Application\Config\Contract\ExternalFeedSourceConfigContract;
 use App\Application\File\Contract\FileFetcherContract;
-use App\Application\Http\Contract\HttpClientContract;
 use App\Application\Http\Contract\shared\HttpGetClientContract;
 use App\Domain\Exceptions\UnsupportedFileSourceException;
 use App\Infrastructure\File\Fetch\LocalXmlFileFetcher;

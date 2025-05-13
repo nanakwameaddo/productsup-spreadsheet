@@ -6,6 +6,4 @@ interface HttpClientContract
 {
     public function exception(mixed $error): string;
 
-
-
 }

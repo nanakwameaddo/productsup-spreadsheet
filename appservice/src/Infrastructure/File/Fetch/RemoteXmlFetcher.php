@@ -5,7 +5,6 @@ namespace App\Infrastructure\File\Fetch;
 use App\Application\Config\Contract\ExternalFeedSourceConfigContract;
 use App\Application\Config\Contract\FileSourceConfigContract;
 use App\Application\File\Contract\FileFetcherContract;
-use App\Application\Http\Contract\HttpClientContract;
 use App\Application\Http\Contract\shared\HttpGetClientContract;
 
 class RemoteXmlFetcher implements FileFetcherContract

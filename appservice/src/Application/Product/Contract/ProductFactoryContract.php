@@ -14,5 +14,4 @@ interface ProductFactoryContract
     public function createFromArray(array $rawData): array;
     public function productMap(array $data): array;
 
-
 }

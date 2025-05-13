@@ -11,6 +11,6 @@ use Symfony\Component\Console\Attribute\AsCommand;
 class ProcessXMLToSheetsCommand extends BaseDataToSheetsCommand
 {
     protected static $defaultName = 'sync:file-to-sheets';
-    protected string  $fileType = "XML";
+    protected string  $fileType = 'XML';
 
 }
